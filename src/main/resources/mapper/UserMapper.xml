@@ -18,4 +18,9 @@
         FROM user
         WHERE user_name = #{userName}
     </select>
+    <select id="getUserId" resultType="java.lang.Long">
+        SELECT id
+        FROM user
+        WHERE user_name = #{userName}
+    </select>
 </mapper>
